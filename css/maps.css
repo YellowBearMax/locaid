@@ -15,10 +15,10 @@ textarea {
     font: inherit;
 }
 
-/* VARIABLES */
+/* VARIABLES USED THROUGHOUT CODE*/
 
 :root {
-  /*FONTS*/
+  /*FONTS AND FONT SIZES*/
   --FF: "Nunito", sans-serif;
   --FS: clamp(1rem, 2.2vh, 1.5rem);
   --FS-NAV: clamp(1.75rem, 4vh, 2.5rem);
@@ -26,7 +26,7 @@ textarea {
   --MOBILE-FS-XL: clamp(4rem, 6vh, 5rem);
   --FS-XL: clamp(5rem, 8vh, 6rem);
 
-  /*COLORS*/
+  /*COLORS FOR ELEMENTS*/
   --BGCOLOR-FADE: rgb(252, 220, 160);
   --bg-color: #cce2cb;
   --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
@@ -129,11 +129,11 @@ html {
   font-size: var(--FS-NAV); 
   cursor: pointer; 
 }
-
+/*Sets color for when you hover on a link*/
 .dropdown-button:hover, .header__li a:hover {
   background-color: var(--LINK-HOVER); 
 }
-
+/*Defines sizing, colors, and font for dropdowns*/
 .dropdown-content {
   display: none; 
   font-size: var(--FS);
@@ -143,7 +143,7 @@ html {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
   z-index: 1; 
 }
-
+/*Defines how to display dropdowns when toggled on*/
 .dropdown-content.visible {
   display: block;
 }
@@ -157,18 +157,18 @@ html {
   padding: 4px 2px; 
   text-align: left;
 }
-
+/*Sets hover color for dropdowns(when you hover over an item, the color the bg turns)*/
 .dropdown-content ul li:hover {
   background-color: gray; 
 }
-
+/*Defines text size, color, and padding for items in dropdowns*/
 .dropdown-content ul li a {
   text-decoration: none; 
   color: var(--FONT-COLOR); 
   display: block; 
   padding: 4px 8px; 
 }
-
+/*sets background colors for all header elements*/
 .header {
   background-color: #cce2cb !important;
 }
@@ -196,12 +196,12 @@ html {
 .dropdown-content ul li a:hover {
   background-color: #ddd;
 }
-
+/*Defines colors in dark mode*/
 [data-theme="dark"] {
   --bg-color: #000000;
   --text-color: #ffffff;
 }
-
+/*Sets background and text color to be a variable, allowing for dark mode editing*/
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -216,6 +216,7 @@ html, body {
         width: 32px;
         height: 32px;
       }
+/*Defines size and font for search box???*/
 .neighborhood-discovery {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -573,7 +574,7 @@ html, body {
 .mapfavorite-btn:hover {
   transform: scale(1.2);
 }
-
+/*Changes colors for dark mode*/
 [data-theme="dark"].custom-map-control-button {
   background-color: black !important; /* Force the background color */
   color: white !important;
@@ -621,7 +622,7 @@ html, body {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
 }
-
+/*Dark mode colors*/
 [data-theme="dark"].filter-button {
  background-color: #000;
  color: #000 ;
