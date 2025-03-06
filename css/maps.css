@@ -75,14 +75,14 @@ textarea {
 .center {
   text-align: center;
 }
-
+/*Sets general rules for HTML*/
 html {
   scroll-behavior: smooth;
   font-family: var(--FF);
   font-size: var(--FS);
   background-color: var(--BGCOLOR);
 }
-
+/*Positions header*/
 .header {
   position: static;
   top: 0;
@@ -93,12 +93,12 @@ html {
 .header__img {
   display: none;
 }
-
+/*Sets colors for header*/
 .header__nav {
   background-color: var(--bg-color);
   font-weight: bold;
 }
-
+/*Defines styling such as font, padding, and spacing for the items in the header*/
 .header__ul {
   font-size: var(--FS-NAV);
   padding: var(--PADDING-TB) var(--PADDING-SIDE);
@@ -112,7 +112,7 @@ html {
 .header-title-line {
   display: none;
 }
-
+/*Creates the down facing arrow for once the dropdowns are pressed*/
 .dropdown-arrow::after {
   font-family: FontAwesome;
   font-size: 1.5rem;
@@ -152,7 +152,7 @@ html {
   list-style: none; 
   padding: 0; 
 }
-
+/*Defines spacing for items in dropdown list*/
 .dropdown-content ul li {
   padding: 4px 2px; 
   text-align: left;
@@ -168,23 +168,24 @@ html {
   display: block; 
   padding: 4px 8px; 
 }
-/*sets background colors for all header elements*/
+/*sets background colors for all header elements, and uses important to keep them consistent*/
 .header {
-  background-color: #cce2cb !important;
+  background-color: var(--bg-color) !important;
 }
 
 .header__nav {
-  background-color: #cce2cb !important;
+  background-color: var(--bg-color) !important;
 }
 
 .header__ul {
-  background-color: #cce2cb !important;
+  background-color: var(--bg-color) !important;
 }
 
 .header__li {
-  background-color: #cce2cb !important;
+  background-color: var(--bg-color) !important;
   opacity: 1 !important;
 }
+/*Makes it so that the header image will stand out compared to the background*/
 .header__img, .li__img {
   mix-blend-mode: multiply;
 }
@@ -229,7 +230,7 @@ html, body {
   color: #4285f4;
   text-decoration: none;
 }
-
+/*Sets details for button, essentially making sure there's no way it looks different*/
 .neighborhood-discovery button {
   background: none;
   border: none;
@@ -245,7 +246,7 @@ html, body {
   font-size: 0.9em;
   margin-top: 0.3em;
 }
-
+/*Sets details for the side panel*/
 .neighborhood-discovery .panel {
   background: #cce2cb;
   bottom: 0;
@@ -260,7 +261,7 @@ html, body {
 .neighborhood-discovery .panel.no-scroll {
   overflow-y: hidden;
 }
-
+/*sets the default constraints for the photos*/
 .neighborhood-discovery .photo {
   background-color: #dadce0;
   background-position: center;
@@ -279,7 +280,7 @@ html, body {
 .neighborhood-discovery .right {
   float: right;
 }
-
+/*makes the favorite button in a consistent location and appearance*/
 .neighborhood-discovery .star-icon {
   filter: invert(88%) sepia(60%) saturate(2073%) hue-rotate(318deg) brightness(93%) contrast(104%);
   height: 1.2em;
@@ -292,7 +293,7 @@ html, body {
 .neighborhood-discovery .star-icon:last-child {
   margin-right: 0.2em;
 }
-
+/*puts the map in a reliable position*/
 .neighborhood-discovery .map {
   bottom: 0;
   left: 20em;
@@ -300,7 +301,7 @@ html, body {
   right: 0;
   top: 0;
 }
-
+/*sets media in the correct positions*/
 @media only screen and (max-width: 640px) {
   .neighborhood-discovery .panel {
     right: 0;
@@ -315,7 +316,7 @@ html, body {
 }
 
 /* --------------------------- PLACES PANEL --------------------------- */
-
+/*gives shadow to places panel*/
 .neighborhood-discovery .places-panel {
   box-shadow: 0 0 10px rgb(60 64 67 / 28%);
   z-index: 1;
@@ -324,7 +325,7 @@ html, body {
 .neighborhood-discovery .places-panel header {
   padding: 0.5em;
 }
-
+/*Sets general rules for search bar*/
 .neighborhood-discovery .search-input input {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3em;
@@ -334,7 +335,7 @@ html, body {
   padding: 0 2.5em 0 1em;
   width: 100%;
 }
-
+/*Positions search button*/
 .neighborhood-discovery .search-input button {
   position: absolute;
   right: 0.8em;
